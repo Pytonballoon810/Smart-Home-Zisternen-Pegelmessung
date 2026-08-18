@@ -1,0 +1,59 @@
+# ---------------------------------------------------------------------------
+# KiCAD
+# ---------------------------------------------------------------------------
+
+# Lock files created while a board/schematic is open (and left behind on crash)
+*.lck
+~*.lck
+~*
+
+# Auto-saves and backups
+_autosave-*
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl-bak
+*.sch-bak
+*.bak
+
+# Per-user local project state: window layout, visible layers, last-used dialog
+# settings. Not design data -- differs per machine and churns constantly.
+# The shared settings live in *.kicad_pro, which IS committed.
+*.kicad_prl
+
+# Footprint/symbol caches, rebuilt automatically
+fp-info-cache
+sym-info-cache
+
+# Generated reports and netlists
+*.rpt
+*-erc.rpt
+*-drc.rpt
+*.net
+
+# Simulation / misc scratch
+*.raw
+*.ngspice
+
+# ---------------------------------------------------------------------------
+# Editor / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Generated fabrication outputs
+# ---------------------------------------------------------------------------
+# hardware/output/ is deliberately COMMITTED: for a published hardware project
+# the schematic PDF, BOM and Gerbers are the useful artifacts -- a reader can
+# review the design or order boards without installing KiCAD.
+#
+# They are all regenerable from the .kicad_sch / .kicad_pcb, so if you would
+# rather keep the repo lean and avoid churn on every re-route, uncomment:
+#
+# hardware/output/
