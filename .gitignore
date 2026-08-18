@@ -36,6 +36,18 @@ sym-info-cache
 *.ngspice
 
 # ---------------------------------------------------------------------------
+# ESPHome
+# ---------------------------------------------------------------------------
+# Real credentials. esphome/secrets.yaml.example is the committed template;
+# the filled-in copy must never be published.
+secrets.yaml
+esphome/secrets.yaml
+
+# Build tree and firmware images
+.esphome/
+*.bin
+
+# ---------------------------------------------------------------------------
 # Editor / OS
 # ---------------------------------------------------------------------------
 .vscode/
